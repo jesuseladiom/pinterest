@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  #inicio{
+    color: black;
+    text-decoration: none;
+    /*background-color: black;*/
+    font-size: 16px;
+    border-radius: 6%;
+    
+    align-items: center;
+  }
+  
+  #hoy{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: center;
+   
+  }
+  
+  #seguir{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+   
+  }
+  
+  .input-wrapper {
+    border-radius: 6%;
+    position: relative;
+  }
+  
+  .finder {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 10px 10px 5px 35px;
+    width: 100%;
+  }
+  
+  .input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+    
+  #content {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 3rem;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    /*grid-template-columns: repeat(auto-fill, 230px);*/
+    /*grid-auto-rows: 1fr;*/
+    gap: 15px;
+    margin-top: 10px;
+  
+    overflow-y: scroll;
+    height: 85vh;
+   
+    /*grid-auto-flow: dense;*/
+  }
+  
+  nav {
+     
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr 0.4fr 0.4fr 3fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 1fr;
+    /*grid-template-columns: repeat(auto-fill, 230px);*/
+    /*grid-auto-rows: 1fr;*/
+  }
+
+  #notifica, #mensajes, #usuario {
+    width: 25px;
+  }
+
+  .capa{
+    position: absolute;
+    display: none;
+  }
+
+  .capa button{
+    display: flex;
+    background-color: cyan ; /* Green */
+    font-size: 16px;
+    position: absolute;
+  }
+
+  .card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    background-color: white;
+    border-radius: 6%;
+    transition: transform 0.3s ease-in-out;
+  
+    opacity: 0.8;
+  
+    width: 95%;
+    height: 95%;
+  }
+  
+  .card-image:hover {
+    filter: opacity(0.9);
+    transform: scale(1.02);
+    opacity: 1;
+
+    display: flex;
+  }
+
+  .card-image:hover > .capa{
+    display: flex;
+  }
+
+  .capa .guardar {
+    background-color: red;
+    border-radius: 1em;
+  }
+    
+  @media (min-width: 600px) {
+    .wide {
+      grid-column: span 2;
+    }
+  
+    .tall {
+      grid-row: span 2;
+    }
+  }
+
+  @media (max-width: 550px) {
+    nav {
+     
+        display: grid;
+        grid-template-columns: 0.1fr 0.5fr 0.5fr 0.5fr 1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-rows: 1fr;
+       
+      }
+  }
+
+      @media (max-width: 420px) {
+        nav {
+         
+            display: grid;
+            grid-template-columns: 0.1fr 0.3fr 0.3fr 0.3fr 1fr 0.2fr 0.1fr 0.1fr;
+            grid-template-rows: 1fr;
+            
+          }
+
+          #inicio, #hoy, #seguir{
+                font-size: 12px;
+          }
+
+          #notifica, #mensajes, #usuario {
+            width: 15px;
+          }
+
+          #logo{
+            width: 20px;
+          }
+        }
+
+        @media (max-width: 229px) {
+            nav {
+             
+                display: grid;
+                grid-template-columns: 0.5fr 0.3fr 0.3fr 0.3fr 0.1fr 0.1fr 0.1fr;
+                grid-template-rows: 1fr;
+                
+              }
+    
+              #inicio, #hoy, #seguir{
+                    font-size: 10px;
+              }
+        
+              #notifica, #mensajes, #usuario {
+                width: 10px;
+              }
+        
+              #logo{
+                width: 10px;
+              }
+
+              .input-wrapper{
+                display: none;
+              }
+
+              #content {
+              
+                display: grid;
+                grid-template-columns: 1fr;
+                /*grid-template-columns: repeat(auto-fill, 230px);*/
+                /*grid-auto-rows: 1fr;*/
+                gap: 15px;
+                margin-top: 10px;
+              
+                overflow-y: scroll;
+                height: 85vh;
+               
+                /*grid-auto-flow: dense;*/
+              }
+            }
+  
+  
+  
