@@ -11,7 +11,6 @@
     font-size: 16px;
     border-radius: 60%;
     justify-content: center;
-    
     align-items: center;
   }
   
@@ -23,6 +22,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  #hoy:hover{
+    background-color: rgb(210, 204, 204);
+    border-radius: 20px;
+  }
   
   #seguir{
     display: inline-flex;
@@ -30,6 +34,12 @@
     text-decoration: none;
     font-size: 16px;
     align-items: center;
+    justify-content: center;
+  }
+
+  #seguir:hover{
+    background-color: rgb(210, 204, 204);
+    border-radius: 20px;
   }
   
   .input-wrapper {
@@ -42,6 +52,8 @@
     color: #191919;
     padding: 10px 10px 5px 35px;
     width: 100%;
+    border-radius: 10px;
+    background-color: rgb(210, 204, 204);
   }
   
   .input-icon {
@@ -83,6 +95,11 @@
 
   #notifica, #mensajes, #usuario {
     width: 25px;
+  }
+
+  #usuario:hover{
+    background-color: rgb(210, 204, 204);
+    border-radius: 20px;
   }
 
   .capa{
